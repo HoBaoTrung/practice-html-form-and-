@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sở Thích Của Bạn</title>
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: Arial, Verdana, sans-serif;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            width: 50%;
+            padding: 5px;
+            margin: 100px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        label{
+            display: inline-block;
+            width: 80px;
+            color: #000080;
+            font-weight: bold;
+            
+        }
+
+        table.first tr> td:first-of-type > label{
+            text-align: right;
+        }
+
+        table.second tr> td:first-of-type > label{
+            text-align: left;
+        }
+
+        input,
+        textarea,
+        select {
+            border: none;
+            border-left: 3px solid gray;
+            border-top: 3px solid gray;
+            padding: 5px;
+            outline: none;
+        }
+
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 5px 10px;
+            background-color: #F5F5F5;
+            border: 1px solid #333;
+            cursor: pointer;
+            border-right: 2px solid gray;
+            border-bottom: 2px solid gray;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .hobbies label {
+            text-align: left;
+            width: 30%;
+            color: #d84315;
+        }
+
+        .button-group {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .button-group button {
+            width: 100px;
+            padding: 5px;
+            margin: 0 5px;
+            background-color: #ccc;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="" method="post" style="background-color: #f4f4f4;">
+
+            <h2 style="background-color: #ff5722;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 0;
+            font-weight: bold;">
+                SỞ THÍCH CỦA BẠN
+            </h2>
+            <table class="first">
+                <tr>
+                    <td><label for="name">Họ và tên</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Email</label></td>
+                    <td><input type="email" id="mail" name="mail"></td>
+                </tr>
+                <tr>
+                    <td><label>Sở thích</label></td>
+                    <td class="hobbies">
+                        <label><input type="checkbox" name="hobby" value="the-thao"> Thể thao</label>
+                        <label><input type="checkbox" name="hobby" value="am-nhac"> Âm nhạc</label>
+                        <label><input type="checkbox" name="hobby" value="doc-sach"> Đọc sách</label>
+                        <label><input type="checkbox" name="hobby" value="luot-web"> Lướt web</label>
+                        <label><input type="checkbox" name="hobby" value="choi-game"> Chơi game</label>
+                        <label><input type="checkbox" name="hobby" value="dien-anh"> Điện ảnh</label>
+                        <label><input type="checkbox" name="hobby" value="du-lich"> Du lịch</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Gửi thông tin" />
+                        <input type="reset" value="Nhập lại" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+    <hr style="border: 1px solid #000; width: 100%; margin: 0;">
+    <div class="container">
+
+        <form action="" method="post" style="background-color: #fffda9;">
+
+            <h2 style="background-color: #d4fdd6;
+            color: #0433ff;
+            padding: 10px;
+            margin-top: 0;
+            font-weight: bold;">
+                ĐĂNG KÝ HỌC VIÊN
+            </h2>
+            <table class="second">
+                <tr>
+                    <td><label for="name">Họ và tên</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="birth">Ngày sinh</label></td>
+                    <td><input type="date" id="birth" name="birth"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Giới tính</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" checked>Nam
+                        <input type="radio" id="female" name="gender">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Địa chỉ</label></td>
+                    <td>
+                        <textarea id="address" name="address" id="" cols="30" rows="10"></textarea>
+
+                </tr>
+                <tr>
+                    <td><label for="name">Lớp</label></td>
+                    <td>
+                        <select name="grade" id="grade">
+                            <option value="">Chọn lớp</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Email</label></td>
+                    <td><input type="email" id="mail" name="mail"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Điện thoại</label></td>
+                    <td><input type="tel" id="phone" name="phone"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Đăng ký" />
+                        <input type="reset" value="Nhập lại" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</body>
+
+</html>
