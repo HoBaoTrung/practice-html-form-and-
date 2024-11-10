@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bàn Cờ Vua</title>
+    <style>
+        body{
+           background-color: #ffb300;  
+        }
+        table {
+           
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        td {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+           
+        }
+
+        tr:nth-child(even):nth-child(n+2) td:nth-child(n+2):nth-child(even),
+        tr:nth-child(odd):nth-child(n+2) td:nth-child(n+2):nth-child(odd)
+        {
+            background-color: white;
+            border: 1px solid #000;
+        }
+
+        tr:nth-child(even):nth-child(n+2) td:nth-child(odd):nth-child(n+2),
+        tr:nth-child(odd):nth-child(n+2) td:nth-child(even):nth-child(n+2) {
+            background-color: black;
+            border: 1px solid #000;
+        }
+
+        /* Dòng đầu tiên và cột đầu tiên để hiển thị số và chữ */
+        td:first-child,
+        tr:first-child td {
+            font-weight: bold;
+            background-color: none !important;
+        }
+
+        /* Định dạng chữ cái và số */
+        .letter,
+        .number {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <!-- Dòng hiển thị chữ cái (A-H) -->
+        <tr>
+            <td></td> <!-- Ô trống góc trên bên trái -->
+            <td class="number">1</td>
+            <td class="number">2</td>
+            <td class="number">3</td>
+            <td class="number">4</td>
+            <td class="number">5</td>
+            <td class="number">6</td>
+            <td class="number">7</td>
+            <td class="number">8</td>
+        </tr>
+
+        <!-- Các dòng số (1-8) -->
+        <tr>
+            <td class="letter">A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="letter">B</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="letter">C</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="letter">D</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="letter">E</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="letter">F</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="letter">G</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="letter">H</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
